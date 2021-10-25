@@ -30,3 +30,46 @@
 
 ![](https://media.vlpt.us/images/513sojin/post/6aa50c43-7f11-4ca9-a594-da486feb56af/%EB%A7%81%ED%81%AC%ED%91%9C%ED%98%84.png)
 
+
+
+
+
+## 이진 탐색 트리
+
+* 이진 트리 중 활용도가 높은 트리로, 데이터 크기를 기준으로 일정 형태로 구성
+* ![이진 탐색 트리의 대표적인 형태](C:\Users\lilyb\Desktop\git\algorithm\이진 탐색 트리의 대표적인 형태.png)
+
+## 이진 탐색 트리의 생성
+
+* 첫 번째 데이터를 최상위 노드로 지정
+
+```
+memory = []
+root = None
+
+nameAry = ['블랙핑크','레드벨벳','마마무','에이핑크','걸스데이','트와이스']
+
+node = TreeNode()        # 노드 생성
+node.data = nameAry[0]   # 데이터 입력
+root = node 			 # 첫 번째 노드를 루트 노드로 지정
+memory.append(node)		 # 생성한 노드를 메모리에 저장
+```
+
+
+
+* 두 번째 이후 데이터를 삽입할 때는 이진 탐색 트리의 특징을 고려.
+
+  ```
+  name = '주황'					# 두 번째 데이터
+  node = TreeNode()			 # 새 노드 생성
+  node.data = name			 # 새 노드에 데이터 입력
+  
+  current = root				 # 현재 작업 노드를 루트 노드로 지정
+  if name < current.data:		 # 입력할 값을 현재 작업 노드의 값과 비교
+  	current.left = node		 # 작으면 새 노드를 왼쪽 링크로 연결
+  else:
+  	current.right = node	 # 크면 새 노드를 오른쪽 링크로 연결
+  memory.append(node)			 # 새 노드를 메모리에 저장
+  ```
+
+  
