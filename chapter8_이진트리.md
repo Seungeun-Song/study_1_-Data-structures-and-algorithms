@@ -37,7 +37,8 @@
 ## 이진 탐색 트리
 
 * 이진 트리 중 활용도가 높은 트리로, 데이터 크기를 기준으로 일정 형태로 구성
-* ![이진 탐색 트리의 대표적인 형태](C:\Users\lilyb\Desktop\git\algorithm\이진 탐색 트리의 대표적인 형태.png)
+
+  ![](https://github.com/Seungeun-Song/study_1_-Data-structures-and-algorithms/blob/master/img/%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89%20%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8%20%ED%98%95%ED%83%9C.png?raw=true)
 
 ## 이진 탐색 트리의 생성
 
@@ -73,3 +74,4 @@ memory.append(node)		 # 생성한 노드를 메모리에 저장
   ```
 
   
+
